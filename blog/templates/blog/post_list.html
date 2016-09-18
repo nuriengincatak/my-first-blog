@@ -1,4 +1,5 @@
 <html lang="tr" xmlns="http://www.w3.org/1999/xhtml">
+
     <head>C:\Users\Engin\djangogirls\blog\templates\blog\post_list.html
         <title>Engin'in blogu</title>
     </head>
@@ -8,9 +9,11 @@
         <p>Published: 30.06.2016, 03:41</p>
 
     </div>
-    {% for post in posts %}
-        {{ post }}
-    {% endfor %}
+
+
+
+
+
     <div>
         <h3><a href="https://www.reddit.com/r/GetMotivated/comments/2xc947/text_soon_i_will_be_gone_forever_but_thats_okay/">Get motivated!</a></h3>
         <p>
@@ -41,4 +44,8 @@
     </div>
 
     </body>
+
 </html>
+{% for post in posts %}
+    {{ post }}
+{% endfor %}
