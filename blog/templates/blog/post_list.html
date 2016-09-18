@@ -9,7 +9,13 @@
         <p>Published: 30.06.2016, 03:41</p>
 
     </div>
-
+    {% for post in posts %}
+        <div>
+            <p>published: {{ post.published_date }}</p>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
 
 
 
@@ -46,6 +52,3 @@
     </body>
 
 </html>
-{% for post in posts %}
-    {{ post }}
-{% endfor %}
